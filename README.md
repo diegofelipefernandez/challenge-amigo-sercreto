@@ -16,7 +16,9 @@
 
 <h2>📷 Capturas de Pantalla</h2>
 
-¡Próximamente!
+* **Agregamos** nombres a la lista ![Inserta un nombre](https://github.com/user-attachments/assets/cd005bff-b6cf-48ad-a6c2-5a4dbaffef9f)
+* **Mostramos** el nombre agregado a la lista ![image](https://github.com/user-attachments/assets/ec19b83c-6008-47f6-bbc2-ccd1b3886628)
+* **Sorteamos** los nombres agregados a la lista ![image](https://github.com/user-attachments/assets/3e00e118-b893-4a71-be90-de971bbcb3ca)
 
 <h2>🛠️ Tecnologías Utilizadas</h2>
 
@@ -42,34 +44,29 @@
 <h2>📄 Código Fuente Principal</h2>
 <h3>📌 Función para Agregar Amigos</h3>
 <pre>
-   <code>
-      function agregarAmigo() {
-         let amigo = document.getElementById('amigo').value;
-         
-         if (amigo !== '') {
-            amigos.push(amigo);
-            document.getElementById('amigo').value = '';
-            actualizarListaAmigos();
-         } else {
-            alert('Por favor, inserte un nombre.');
-         }
+   function agregarAmigo() {
+      let amigo = document.getElementById('amigo').value;
+      if (amigo !=== '') {
+         amigos.push(amigo);
+         document.getElementById('amigo').value = '';
+         actualizarListaAmigos();
+      } else {
+         alert('Por favor, inserte un nombre.');
       }
-   </code>
+   }
 </pre>
 
 <h3>🎲 Función para Sortear un Amigo Secreto</h3>
 <pre>
-   <code>
-      function sortearAmigo() {
-         if (amigos.length === 0) {
-            alert('No hay amigos en la lista.');
-         } else {
-            let indice = Math.floor(Math.random() * amigos.length);
-            let nombre = amigos[indice];
-            document.getElementById('resultado').innerHTML = nombre;
-         }
+   function sortearAmigo() {
+      if (amigos.length === 0) {
+         alert('No hay amigos en la lista.');
+      } else {
+         let indice = Math.floor(Math.random() * amigos.length);
+         let nombre = amigos[indice];
+         document.getElementById('resultado').innerHTML = nombre;
       }
-   </code>
+   }
 </pre>
 
 <h2>🤝 Contribuciones</h2>
