@@ -31,7 +31,7 @@ function listaAmigos() {
     Escribe una función que seleccione de manera aleatoria uno de los nombres almacenados
     en el array amigos. Usa Math.random() y Math.floor() para obtener un índice aleatorio.
 */
-function amigoAleatorio() {
+function sortearAmigo() {
     // Comprobamos si el arreglo está vacío antes de sortear
     if (amigos.length === 0) {
         alert('No hay amigos en la lista.');
